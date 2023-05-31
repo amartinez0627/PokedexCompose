@@ -132,7 +132,7 @@ fun PokemonListComp(
         }
 
         items(itemCount){
-            if (it >= itemCount -1 && !endReached){
+            if (it >= itemCount -1 && !endReached && !isLoading){
                 viewModel.loadPokemonPaginated()
             }
             PokedexRow(
